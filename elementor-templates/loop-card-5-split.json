@@ -1,0 +1,764 @@
+{
+ "title": "Loop Card 5 — Horizontal Split",
+ "type": "loop-item",
+ "version": "0.4",
+ "page_settings": [],
+ "content": [
+  {
+   "id": "019ffd",
+   "elType": "container",
+   "isInner": false,
+   "settings": {
+    "_title": "card5-root",
+    "flex_direction": "row",
+    "justify_content": "space-between",
+    "align_items": "stretch",
+    "gap": {
+     "unit": "px",
+     "top": "8",
+     "right": "8",
+     "bottom": "8",
+     "left": "8",
+     "isLinked": true
+    },
+    "background_background": "classic",
+    "background_color": "#FFFFFF",
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "1",
+     "bottom": "1",
+     "left": "1",
+     "isLinked": true
+    },
+    "border_color": "#E5E7EB",
+    "border_radius": {
+     "unit": "px",
+     "top": "16",
+     "right": "16",
+     "bottom": "16",
+     "left": "16",
+     "isLinked": true
+    },
+    "overflow": "hidden"
+   },
+   "elements": [
+    {
+     "id": "0138f2",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "_title": "card5-media",
+      "flex_direction": "column",
+      "gap": {
+       "unit": "px",
+       "top": "8",
+       "right": "8",
+       "bottom": "8",
+       "left": "8",
+       "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8FAFC",
+      "padding": {
+       "unit": "px",
+       "top": "12",
+       "right": "12",
+       "bottom": "12",
+       "left": "12",
+       "isLinked": true
+      },
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "1",
+       "isLinked": false
+      },
+      "border_color": "#E5E7EB",
+      "width": {
+       "unit": "%",
+       "size": 40,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "013150",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "_title": "badge-cat",
+        "background_background": "classic",
+        "background_color": "#DBEAFE",
+        "border_radius": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "4",
+         "right": "10",
+         "bottom": "4",
+         "left": "10",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "012d7f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "_title": "dyn→Product Terms",
+          "title": "لوازم خانگی",
+          "header_size": "span",
+          "align": "right",
+          "typography_typography": "custom",
+          "font_family": "Vazirmatn",
+          "font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "font_weight": "600",
+          "title_color": "#1D4ED8"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "013521",
+       "elType": "widget",
+       "widgetType": "image",
+       "isInner": false,
+       "settings": {
+        "_title": "dyn→Product Image",
+        "image": {
+         "url": "",
+         "id": ""
+        },
+        "image_size": "woocommerce_single",
+        "link_to": "none",
+        "object_fit": "cover",
+        "width": {
+         "unit": "%",
+         "size": 100,
+         "sizes": []
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        }
+       },
+       "elements": []
+      }
+     ]
+    },
+    {
+     "id": "019c2c",
+     "elType": "container",
+     "isInner": false,
+     "settings": {
+      "_title": "card5-body",
+      "flex_direction": "column",
+      "gap": {
+       "unit": "px",
+       "top": "8",
+       "right": "8",
+       "bottom": "8",
+       "left": "8",
+       "isLinked": true
+      },
+      "padding": {
+       "unit": "px",
+       "top": "16",
+       "right": "16",
+       "bottom": "16",
+       "left": "16",
+       "isLinked": true
+      },
+      "width": {
+       "unit": "%",
+       "size": 60,
+       "sizes": []
+      }
+     },
+     "elements": [
+      {
+       "id": "014465",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "_title": "card5-meta",
+        "flex_direction": "row",
+        "justify_content": "space-between",
+        "align_items": "center",
+        "gap": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "013cc3",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "_title": "card5-cat",
+          "title": "لوازم خانگی",
+          "header_size": "span",
+          "align": "right",
+          "typography_typography": "custom",
+          "font_family": "Vazirmatn",
+          "font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "font_weight": "500",
+          "title_color": "#6B7280"
+         },
+         "elements": []
+        },
+        {
+         "id": "014094",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "_title": "dyn→Product Rating",
+          "title": "★ ۴٫۶ (۹۴)",
+          "header_size": "span",
+          "align": "right",
+          "typography_typography": "custom",
+          "font_family": "Vazirmatn",
+          "font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "font_weight": "700",
+          "title_color": "#111827"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "014836",
+       "elType": "widget",
+       "widgetType": "heading",
+       "isInner": false,
+       "settings": {
+        "_title": "dyn→Product Title",
+        "title": "جاروبرقی بدون کیسهٔ مدل V۸ پرو",
+        "header_size": "h3",
+        "align": "right",
+        "typography_typography": "custom",
+        "font_family": "Vazirmatn",
+        "font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "font_weight": "700",
+        "title_color": "#111827"
+       },
+       "elements": []
+      },
+      {
+       "id": "016e60",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "_title": "card5-specs",
+        "flex_direction": "row",
+        "justify_content": "flex-start",
+        "align_items": "center",
+        "gap": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_border": "dashed",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "0",
+         "bottom": "1",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#E5E7EB"
+       },
+       "elements": [
+        {
+         "id": "0153a9",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "_title": "spec",
+          "gap": {
+           "unit": "px",
+           "top": "6",
+           "right": "6",
+           "bottom": "6",
+           "left": "6",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "014c07",
+           "elType": "widget",
+           "widgetType": "icon",
+           "isInner": false,
+           "settings": {
+            "_title": "spec-icon",
+            "selected_icon": {
+             "value": "fas fa-wind",
+             "library": "fa-solid"
+            },
+            "primary_color": "#2563EB",
+            "size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "014fd8",
+           "elType": "widget",
+           "widgetType": "heading",
+           "isInner": false,
+           "settings": {
+            "_title": "spec-text",
+            "title": "مکش ۲۲۰W",
+            "header_size": "span",
+            "align": "right",
+            "typography_typography": "custom",
+            "font_family": "Vazirmatn",
+            "font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "font_weight": "500",
+            "title_color": "#374151"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "015f1c",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "_title": "spec",
+          "gap": {
+           "unit": "px",
+           "top": "6",
+           "right": "6",
+           "bottom": "6",
+           "left": "6",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "01577a",
+           "elType": "widget",
+           "widgetType": "icon",
+           "isInner": false,
+           "settings": {
+            "_title": "spec-icon",
+            "selected_icon": {
+             "value": "fas fa-sparkles",
+             "library": "fa-solid"
+            },
+            "primary_color": "#2563EB",
+            "size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "015b4b",
+           "elType": "widget",
+           "widgetType": "heading",
+           "isInner": false,
+           "settings": {
+            "_title": "spec-text",
+            "title": "فیلتر HEPA",
+            "header_size": "span",
+            "align": "right",
+            "typography_typography": "custom",
+            "font_family": "Vazirmatn",
+            "font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "font_weight": "500",
+            "title_color": "#374151"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "016a8f",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "_title": "spec",
+          "gap": {
+           "unit": "px",
+           "top": "6",
+           "right": "6",
+           "bottom": "6",
+           "left": "6",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "0162ed",
+           "elType": "widget",
+           "widgetType": "icon",
+           "isInner": false,
+           "settings": {
+            "_title": "spec-icon",
+            "selected_icon": {
+             "value": "fas fa-shield-alt",
+             "library": "fa-solid"
+            },
+            "primary_color": "#2563EB",
+            "size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "0166be",
+           "elType": "widget",
+           "widgetType": "heading",
+           "isInner": false,
+           "settings": {
+            "_title": "spec-text",
+            "title": "گارانتی ۱۸ ماهه",
+            "header_size": "span",
+            "align": "right",
+            "typography_typography": "custom",
+            "font_family": "Vazirmatn",
+            "font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "font_weight": "500",
+            "title_color": "#374151"
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "018917",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "_title": "card5-foot",
+        "flex_direction": "row",
+        "justify_content": "space-between",
+        "align_items": "center",
+        "gap": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "0179d3",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "_title": "card5-price-row",
+          "flex_direction": "row",
+          "justify_content": "flex-start",
+          "align_items": "center",
+          "gap": {
+           "unit": "px",
+           "top": "8",
+           "right": "8",
+           "bottom": "8",
+           "left": "8",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "017231",
+           "elType": "widget",
+           "widgetType": "heading",
+           "isInner": false,
+           "settings": {
+            "_title": "dyn→Product Price",
+            "title": "۵۴۵۰۰۰۰ تومان",
+            "header_size": "h4",
+            "align": "right",
+            "typography_typography": "custom",
+            "font_family": "Vazirmatn",
+            "font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "font_weight": "800",
+            "title_color": "#2563EB"
+           },
+           "elements": []
+          },
+          {
+           "id": "017602",
+           "elType": "widget",
+           "widgetType": "heading",
+           "isInner": false,
+           "settings": {
+            "_title": "card5-old-price",
+            "title": "۶٬۴۰٬۰۰",
+            "header_size": "span",
+            "align": "right",
+            "typography_typography": "custom",
+            "font_family": "Vazirmatn",
+            "font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "font_weight": "400",
+            "title_color": "#9CA3AF"
+           },
+           "elements": []
+          }
+         ]
+        },
+        {
+         "id": "018546",
+         "elType": "container",
+         "isInner": false,
+         "settings": {
+          "_title": "card5-actions",
+          "flex_direction": "row",
+          "justify_content": "flex-start",
+          "align_items": "center",
+          "gap": {
+           "unit": "px",
+           "top": "8",
+           "right": "8",
+           "bottom": "8",
+           "left": "8",
+           "isLinked": true
+          }
+         },
+         "elements": [
+          {
+           "id": "017da4",
+           "elType": "widget",
+           "widgetType": "icon",
+           "isInner": false,
+           "settings": {
+            "_title": "wish-icon",
+            "selected_icon": {
+             "value": "fas fa-heart",
+             "library": "fa-solid"
+            },
+            "primary_color": "#475569",
+            "size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "018175",
+           "elType": "widget",
+           "widgetType": "icon",
+           "isInner": false,
+           "settings": {
+            "_title": "compare",
+            "selected_icon": {
+             "value": "fas fa-balance-scale",
+             "library": "fa-solid"
+            },
+            "primary_color": "#475569",
+            "size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            }
+           },
+           "elements": []
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "01948a",
+       "elType": "container",
+       "isInner": false,
+       "settings": {
+        "_title": "card5-stock",
+        "flex_direction": "row",
+        "justify_content": "flex-start",
+        "align_items": "center",
+        "gap": {
+         "unit": "px",
+         "top": "6",
+         "right": "6",
+         "bottom": "6",
+         "left": "6",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "018ce8",
+         "elType": "widget",
+         "widgetType": "icon",
+         "isInner": false,
+         "settings": {
+          "_title": "stock-dot",
+          "selected_icon": {
+           "value": "fas fa-circle",
+           "library": "fa-solid"
+          },
+          "primary_color": "#10B981",
+          "size": {
+           "unit": "px",
+           "size": 8,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0190b9",
+         "elType": "widget",
+         "widgetType": "heading",
+         "isInner": false,
+         "settings": {
+          "_title": "dyn→Product Stock",
+          "title": "موجود در انبار — ارسال فردا",
+          "header_size": "span",
+          "align": "right",
+          "typography_typography": "custom",
+          "font_family": "Vazirmatn",
+          "font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "font_weight": "600",
+          "title_color": "#047857"
+         },
+         "elements": []
+        }
+       ]
+      },
+      {
+       "id": "01985b",
+       "elType": "widget",
+       "widgetType": "button",
+       "isInner": false,
+       "settings": {
+        "_title": "card5-add",
+        "text": "افزودن به سبد خرید",
+        "selected_icon": {
+         "value": "fas fa-shopping-cart",
+         "library": "fa-solid"
+        },
+        "icon_align": "start",
+        "background_color": "#2563EB",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "12",
+         "right": "12",
+         "bottom": "12",
+         "left": "12",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "12",
+         "right": "16",
+         "bottom": "12",
+         "left": "16",
+         "isLinked": false
+        },
+        "typography_typography": "custom",
+        "font_family": "Vazirmatn",
+        "font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "font_weight": "700"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
