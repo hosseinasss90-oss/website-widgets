@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پیش‌نمایش ۵ کانسپت کارت محصول — RTL</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-10-9.2C.4 8.9 1.7 5.4 4.9 4.4c1.9-.6 4 .1 5.3 1.7L12 7.9l1.8-1.8c1.3-1.6 3.4-2.3 5.3-1.7 3.2 1 4.5 4.5 2.9 7.4C19.5 16.1 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.4 11.2c.15.7.8 1.3 1.6 1.3h8.7c.75 0 1.4-.5 1.55-1.25L21.4 8H6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.7" cy="20.2" r="1.6" fill="currentColor"/><circle cx="17.6" cy="20.2" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M5 21h14M12 6H7l-3.5 6a3.6 3.6 0 0 0 7 0L7 6m5 0h5l3.5 6a3.6 3.6 0 0 1-7 0L17 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.3L12 17.1l-5.7 3.1 1.2-6.3-4.7-4.4 6.4-.8z" fill="currentColor"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4.5 13.5H11L9.5 22 18 10.5h-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 22c-4 0-7-2.9-7-6.8 0-2.7 1.6-4.7 3-6.4 1.3-1.6 2.5-3 2.5-5.3 0-.8.7-1.4 1.4-1 3 1.8 7.1 6.6 7.1 12.7 0 3.9-3 6.8-7 6.8zm0-3.2c1.5 0 2.7-1.1 2.7-2.7 0-1.5-1.2-2.6-2.7-4-1.5 1.4-2.7 2.5-2.7 4 0 1.6 1.2 2.7 2.7 2.7z" fill="currentColor"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2l2 6.6L20.5 11 14 13.4 12 20l-2-6.6L3.5 11 10 8.6z" fill="currentColor"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h9.5a2.8 2.8 0 1 0-2.7-3.6M3 12h14.5a3 3 0 1 1-2.9 3.8M3 16h7.5a2.6 2.6 0 1 1-2.5 3.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5l7.5 3v6c0 5-3.2 8.4-7.5 10-4.3-1.6-7.5-5-7.5-10v-6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.8 12l2.3 2.3 4.2-4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 11V4a1 1 0 0 1 1-1h7l10 10-8 8L3 11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="currentColor"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div>
+      <h1>پیش‌نمایش تعاملی — ۵ کانسپت کارت محصول</h1>
+      <p>راست‌چین · فونت وزیرمتن · فقط برای بازبینی طرح — قالب المنتوری هنوز ساخته نشده است. هاور و سوییچ دستگاه را تست کنید.</p>
+    </div>
+    <div class="devices" role="group" aria-label="تغییر عرض نمایش">
+      <button class="dev active" data-dev="desktop">دسکتاپ</button>
+      <button class="dev" data-dev="tablet">تبلت</button>
+      <button class="dev" data-dev="mobile">موبایل</button>
+    </div>
+  </div>
+</header>
+
+<main id="stage" data-device="desktop">
+
+  <!-- ───────── کارت ۱ : مینیمال ادیتوریال ───────── -->
+  <section class="demo demo-1">
+    <header class="demo-head">
+      <span class="demo-num">کارت ۱</span>
+      <div>
+        <h2>مینیمالِ ادیتوریال</h2>
+        <p>عمودی ساده با hairline · سناریو: فروشگاه مینیمال، کتاب، دکور، دیجیتال سبک · حرکت: خیلی کم (لیفت ۴px + زوم ۴٪)</p>
+      </div>
+    </header>
+
+    <div class="cards-row">
+      <article class="card c1">
+        <div class="c1-media">
+          <span class="badge b-red">۲۰٪ تخفیف</span>
+          <button class="iconbtn wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+          <a class="c1-imglink" href="#" aria-label="مشاهدهٔ هدفون بی‌سیم مدل X۲۰"><img src="assets/img/headphones.jpg" alt="هدفون بی‌سیم نویزکنسلینگ مدل X۲۰"></a>
+        </div>
+        <div class="c1-body">
+          <div class="c1-meta">
+            <span class="c1-cat">صوتی و تصویری</span>
+            <span class="c1-rate"><svg><use href="#i-star"/></svg> ۴٫۷ <em>(۱۲۸)</em></span>
+          </div>
+          <h3><a href="#">هدفون بی‌سیم نویزکنسلینگ مدل X۲۰</a></h3>
+          <div class="c1-price"><strong>۲٬۴۵۰٬۰۰۰ <small>تومان</small></strong><s>۳۰۶۰٬۰۰</s></div>
+          <div class="stock ok"><i></i> موجود — ارسال امروز</div>
+          <button class="add-btn add-light"><svg><use href="#i-cart"/></svg><span>افزودن به سبد خرید</span></button>
+        </div>
+      </article>
+
+      <article class="card c1">
+        <div class="c1-media">
+          <span class="badge b-blue">جدید</span>
+          <button class="iconbtn wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+          <a class="c1-imglink" href="#" aria-label="مشاهدهٔ هدفون بی‌سیم مدل X۲۰"><img src="assets/img/headphones.jpg" alt="هدفون بی‌سیم نویزکنسلینگ مدل X۲۰" style="filter:hue-rotate(160deg) saturate(.6)"></a>
+        </div>
+        <div class="c1-body">
+          <div class="c1-meta">
+            <span class="c1-cat">صوتی و تصویری</span>
+            <span class="c1-rate"><svg><use href="#i-star"/></svg> ۴٫۲ <em>(۳۶)</em></span>
+          </div>
+          <h3><a href="#">هدفون بی‌سیم نویزکنسلینگ مدل X۲۰ — نسخهٔ سبز</a></h3>
+          <div class="c1-price"><strong>۲٬۹۰٬۰۰۰ <small>تومان</small></strong></div>
+          <div class="stock warn"><i></i> تنها ۳ عدد در انبار</div>
+          <button class="add-btn add-light"><svg><use href="#i-cart"/></svg><span>افزودن به سبد خرید</span></button>
+        </div>
+      </article>
+
+      <article class="card c1">
+        <div class="c1-media">
+          <button class="iconbtn wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+          <a class="c1-imglink" href="#" aria-label="مشاهدهٔ هدفون بی‌سیم مدل X۲۰"><img src="assets/img/headphones.jpg" alt="هدفون بی‌سیم نویزکنسلینگ مدل X۲۰" style="filter:grayscale(1) brightness(.75)"></a>
+          <span class="c1-oos">ناموجود</span>
+        </div>
+        <div class="c1-body">
+          <div class="c1-meta">
+            <span class="c1-cat">صوتی و تصویری</span>
+            <span class="c1-rate"><svg><use href="#i-star"/></svg> ۴٫۹ <em>(۲۱۰)</em></span>
+          </div>
+          <h3><a href="#">هدفون بی‌سیم نویزکنسلینگ مدل X۲۰ — نسخهٔ مشکی</a></h3>
+          <div class="c1-price"><strong>۲٬۵۰۰۰۰ <small>تومان</small></strong></div>
+          <div class="stock out"><i></i> ناموجود — اطلاع‌رسانی موجودی</div>
+          <button class="add-btn add-light disabled" disabled><svg><use href="#i-cart"/></svg><span>ناموجود</span></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────── کارت ۲ : ویترین شیشه‌ای ───────── -->
+  <section class="demo demo-2">
+    <header class="demo-head light">
+      <span class="demo-num">کارت ۲</span>
+      <div>
+        <h2>ویترینِ شیشه‌ای (Glass Immersive)</h2>
+        <p>عکس تمام‌کارت + پنل شناور · سناریو: عطر و آرایشی، لوکس · حرکت: زوم ۸٪ + توالی پلکانی محتوا</p>
+      </div>
+    </header>
+
+    <div class="cards-row">
+      <article class="card c2">
+        <img class="c2-img" src="assets/img/perfume.jpg" alt="ادوپرفیوم مردانهٔ آمبر رویال ۱۰۰ میلی‌لیتر">
+        <div class="c2-ovl"></div>
+        <div class="c2-top">
+          <span class="badge b-red">۲۰٪ تخفیف</span>
+          <div class="c2-icons">
+            <button class="iconbtn dark wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="iconbtn dark" aria-label="مشاهدهٔ سریع"><svg><use href="#i-eye"/></svg></button>
+          </div>
+        </div>
+        <div class="c2-glass">
+          <div class="c2-cat">عطر و ادکلن</div>
+          <h3>ادوپرفیوم مردانهٔ آمبر رویال ۱۰۰ml</h3>
+          <div class="c2-rate"><svg><use href="#i-star"/></svg> ۴٫۸ <em>(۲۴۰ نظر)</em></div>
+          <div class="c2-row">
+            <div class="c2-price"><strong>۱٬۹۰۰۰۰ <small>تومان</small></strong><s>۲۳۵۰٬۰۰۰</s></div>
+            <button class="add-btn add-glass"><svg><use href="#i-cart"/></svg><span>افزودن</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card c2">
+        <img class="c2-img" src="assets/img/perfume.jpg" alt="ادوپرفیوم مردانهٔ آمبر رویال ۱۰۰ میلی‌لیتر" style="filter:hue-rotate(190deg) saturate(.7)">
+        <div class="c2-ovl"></div>
+        <div class="c2-top">
+          <span class="badge b-glass">جدید</span>
+          <div class="c2-icons">
+            <button class="iconbtn dark wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="iconbtn dark" aria-label="مشاهدهٔ سریع"><svg><use href="#i-eye"/></svg></button>
+          </div>
+        </div>
+        <div class="c2-glass">
+          <div class="c2-cat">عطر و ادکلن</div>
+          <h3>ادوپرفیوم زنانهٔ گلِ یخ ۷۵ml</h3>
+          <div class="c2-rate"><svg><use href="#i-star"/></svg> ۴٫۶ <em>(۹۸ نظر)</em></div>
+          <div class="c2-row">
+            <div class="c2-price"><strong>۲٬۱۵۰٬۰۰ <small>تومان</small></strong></div>
+            <button class="add-btn add-glass"><svg><use href="#i-cart"/></svg><span>افزودن</span></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────── کارت ۳ : نئون دارک ───────── -->
+  <section class="demo demo-3">
+    <header class="demo-head light">
+      <span class="demo-num">کارت ۳</span>
+      <div>
+        <h2>نئونِ دارک / تک‌گرید</h2>
+        <p>حاشیهٔ گرادیانی + نور محیطی + نوار موجودی · سناریو: گیمینگ و دیجیتال · حرکت: درخشش نئون + زوم ۶٪</p>
+      </div>
+    </header>
+
+    <div class="cards-row">
+      <article class="card c3-wrap">
+        <div class="c3">
+          <div class="c3-top">
+            <span class="badge b-amber"><svg><use href="#i-fire"/></svg> پرفروش</span>
+            <div class="c3-icons">
+              <button class="iconbtn neon wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+              <button class="iconbtn neon" aria-label="مقایسه"><svg><use href="#i-scale"/></svg></button>
+            </div>
+          </div>
+          <div class="c3-media">
+            <div class="c3-glow"></div>
+            <img src="assets/img/gpu.jpg" alt="کارت گرافیک RTX 4070 Super">
+          </div>
+          <h3>کارت گرافیک RTX 4070 Super سه‌فَن</h3>
+          <div class="c3-chips">
+            <span>۱۲GB</span><span>GDDR6X</span><span>PCIe 4.0</span>
+          </div>
+          <div class="c3-stock">
+            <div class="c3-stock-label"><i class="dot"></i> فقط ۱۲ عدد باقی مانده</div>
+            <div class="c3-bar"><i style="--w:30%"></i></div>
+          </div>
+          <div class="c3-price"><strong>۳۲٬۹۰۰٬۰۰۰ <small>تومان</small></strong><s>۳۵٬۵۰۰٬۰۰</s><span class="c3-off">−۷٪</span></div>
+          <button class="add-btn add-neon"><svg><use href="#i-bolt"/></svg><span>افزودن سریع به سبد</span></button>
+        </div>
+      </article>
+
+      <article class="card c3-wrap">
+        <div class="c3">
+          <div class="c3-top">
+            <span class="badge b-red">۱۰٪ تخفیف</span>
+            <div class="c3-icons">
+              <button class="iconbtn neon wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+              <button class="iconbtn neon" aria-label="مقایسه"><svg><use href="#i-scale"/></svg></button>
+            </div>
+          </div>
+          <div class="c3-media">
+            <div class="c3-glow" style="background:radial-gradient(closest-side, rgba(129,140,248,.4), transparent 70%)"></div>
+            <img src="assets/img/gpu.jpg" alt="کارت گرافیک RTX 4060" style="filter:hue-rotate(40deg)">
+          </div>
+          <h3>کارت گرافیک RTX 4060 دولپه</h3>
+          <div class="c3-chips">
+            <span>۸GB</span><span>GDDR6</span><span>PCIe 4.0</span>
+          </div>
+          <div class="c3-stock">
+            <div class="c3-stock-label"><i class="dot"></i> موجود — ارسال ۲۴ ساعته</div>
+            <div class="c3-bar"><i style="--w:80%"></i></div>
+          </div>
+          <div class="c3-price"><strong>۱۸٬۹۰۰٬۰۰۰ <small>تومان</small></strong><s>۲۱٬۰۰۰٬۰۰</s><span class="c3-off">−۱۰٪</span></div>
+          <button class="add-btn add-neon"><svg><use href="#i-bolt"/></svg><span>افزودن سریع به سبد</span></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────── کارت ۴ : پنل اسلایدی ───────── -->
+  <section class="demo demo-4">
+    <header class="demo-head">
+      <span class="demo-num">کارت ۴</span>
+      <div>
+        <h2>پنلِ اسلایدی / کالکشن مد</h2>
+        <p>کشوی اکشن روی عکس + چیپ سایز · سناریو: پوشاک و کفش · حرکت: اسلاید پلکانی ۲۵۰ms (در موبایل همیشه باز)</p>
+      </div>
+    </header>
+
+    <div class="cards-row">
+      <article class="card c4">
+        <div class="c4-media">
+          <span class="badge b-red">۳۰٪ تخفیف</span>
+          <div class="c4-icons">
+            <button class="iconbtn wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="iconbtn" aria-label="مقایسه"><svg><use href="#i-scale"/></svg></button>
+          </div>
+          <a class="c4-imglink" href="#" aria-label="مشاهدهٔ کفش رانینگ ایرمکس"><img src="assets/img/sneaker.jpg" alt="کفش رانینگ ایرمکس پرو"></a>
+          <div class="c4-drawer">
+            <button class="add-btn add-solid"><svg><use href="#i-cart"/></svg><span>افزودن سریع</span></button>
+            <button class="add-btn add-ghost"><svg><use href="#i-eye"/></svg><span>مشاهدهٔ محصول</span></button>
+          </div>
+        </div>
+        <div class="c4-body">
+          <h3><a href="#">کفش رانینگ ایرمکس پرو</a></h3>
+          <div class="c4-price"><strong>۳٬۲۹۰٬۰۰۰ <small>تومان</small></strong><s>۴۷۰٬۰۰</s></div>
+          <div class="c4-sizes" role="group" aria-label="انتخاب سایز">
+            <span class="c4-sizes-label">سایز:</span>
+            <button class="size">۴۰</button><button class="size sel">۴۱</button><button class="size">۴۲</button><button class="size">۴۳</button><button class="size off" disabled>۴۴</button>
+          </div>
+          <div class="stock ok"><i></i> موجود</div>
+        </div>
+      </article>
+
+      <article class="card c4">
+        <div class="c4-media">
+          <span class="badge b-dark">جدید</span>
+          <div class="c4-icons">
+            <button class="iconbtn wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+            <button class="iconbtn" aria-label="مقایسه"><svg><use href="#i-scale"/></svg></button>
+          </div>
+          <a class="c4-imglink" href="#" aria-label="مشاهدهٔ کفش رانینگ ایرمکس"><img src="assets/img/sneaker.jpg" alt="کفش رانینگ ایرمکس لایت" style="filter:hue-rotate(-30deg) saturate(1.1)"></a>
+          <div class="c4-drawer">
+            <button class="add-btn add-solid"><svg><use href="#i-cart"/></svg><span>افزودن سریع</span></button>
+            <button class="add-btn add-ghost"><svg><use href="#i-eye"/></svg><span>مشاهدهٔ محصول</span></button>
+          </div>
+        </div>
+        <div class="c4-body">
+          <h3><a href="#">کفش رانینگ ایرمکس لایت</a></h3>
+          <div class="c4-price"><strong>۲٬۷۵۰٬۰۰۰ <small>تومان</small></strong></div>
+          <div class="c4-sizes" role="group" aria-label="انتخاب سایز">
+            <span class="c4-sizes-label">سایز:</span>
+            <button class="size sel">۳۸</button><button class="size">۳۹</button><button class="size">۴۰</button><button class="size">۴۱</button>
+          </div>
+          <div class="stock ok"><i></i> موجود</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────── کارت ۵ : اسپلیت افقی ───────── -->
+  <section class="demo demo-5">
+    <header class="demo-head">
+      <span class="demo-num">کارت ۵</span>
+      <div>
+        <h2>اسپلیتِ افقی / کارتِ مشخصات</h2>
+        <p>عکس راست + محتوای چپ (Row Reverse) · سناریو: لوازم خانگی، حالت لیست و نتایج جستجو · حرکت: کم (لیفت ۳px + اسلاید مشخصات)</p>
+      </div>
+    </header>
+
+    <div class="cards-col">
+      <article class="card c5">
+        <div class="c5-media">
+          <span class="badge b-red">۱۵٪ تخفیف</span>
+          <a href="#" aria-label="مشاهدهٔ جاروبرقی بدون کیسهٔ V۸ پرو"><img src="assets/img/vacuum.jpg" alt="جاروبرقی بدون کیسهٔ مدل V۸ پرو"></a>
+        </div>
+        <div class="c5-body">
+          <div class="c5-meta"><span class="c5-cat">لوازم خانگی</span><span class="c5-rate"><svg><use href="#i-star"/></svg> ۴٫۶ <em>(۹۴)</em></span></div>
+          <h3><a href="#">جاروبرقی بدون کیسهٔ مدل V۸ پرو</a></h3>
+          <ul class="c5-specs">
+            <li><svg><use href="#i-wind"/></svg> مکش ۲۲۰W</li>
+            <li><svg><use href="#i-spark"/></svg> فیلتر HEPA</li>
+            <li><svg><use href="#i-shield"/></svg> گارانتی ۱۸ ماهه</li>
+          </ul>
+          <div class="c5-foot">
+            <div class="c5-price"><strong>۵٬۴۵۰٬۰۰۰ <small>تومان</small></strong><s>۶۴۰٬۰۰</s></div>
+            <div class="c5-actions">
+              <button class="iconbtn wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+              <button class="iconbtn" aria-label="مقایسه"><svg><use href="#i-scale"/></svg></button>
+            </div>
+          </div>
+          <div class="stock ok"><i></i> موجود در انبار — ارسال فردا</div>
+          <button class="add-btn add-primary"><svg><use href="#i-cart"/></svg><span>افزودن به سبد خرید</span></button>
+        </div>
+      </article>
+
+      <article class="card c5">
+        <div class="c5-media">
+          <span class="badge b-blue">جدید</span>
+          <a href="#" aria-label="مشاهدهٔ جاروبرقی بدون کیسهٔ V۶"><img src="assets/img/vacuum.jpg" alt="جاروبرقی بدون کیسهٔ مدل V۶" style="filter:hue-rotate(120deg) saturate(.7)"></a>
+        </div>
+        <div class="c5-body">
+          <div class="c5-meta"><span class="c5-cat">لوازم خانگی</span><span class="c5-rate"><svg><use href="#i-star"/></svg> ۴٫۳ <em>(۴۱)</em></span></div>
+          <h3><a href="#">جاروبرقی بدون کیسهٔ مدل V۶ کمپکت</a></h3>
+          <ul class="c5-specs">
+            <li><svg><use href="#i-wind"/></svg> مکش ۱۸۰۰W</li>
+            <li><svg><use href="#i-spark"/></svg> فیلتر قابل شست‌وشو</li>
+            <li><svg><use href="#i-shield"/></svg> گارانتی ۱۲ ماهه</li>
+          </ul>
+          <div class="c5-foot">
+            <div class="c5-price"><strong>۳٬۸۰۰۰۰ <small>تومان</small></strong></div>
+            <div class="c5-actions">
+              <button class="iconbtn wish" aria-label="افزودن به علاقه‌مندی‌ها" aria-pressed="false"><svg><use href="#i-heart"/></svg></button>
+              <button class="iconbtn" aria-label="مقایسه"><svg><use href="#i-scale"/></svg></button>
+            </div>
+          </div>
+          <div class="stock ok"><i></i> موجود در انبار</div>
+          <button class="add-btn add-primary"><svg><use href="#i-cart"/></svg><span>افزودن به سبد خرید</span></button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="summary">
+    <h2>جمع‌بندی تمایز</h2>
+    <div class="sum-grid">
+      <div><strong>۱</strong> مینیمال ادیتوریال — عمودی ساده، حرکت کم</div>
+      <div><strong>۲</strong> ویترین شیشه‌ای — Overlay + پنل شناور، توالی پلکانی</div>
+      <div><strong>۳</strong> نئون دارک — حاشیهٔ گرادیانی + نوار موجودی</div>
+      <div><strong>۴</strong> پنل اسلایدی — کشوی اکشن + چیپ سایز</div>
+      <div><strong>۵</strong> اسپلیت افقی — Row Reverse + مشخصات فنی</div>
+    </div>
+    <p>پس از تأیید کارت(ها)، مرحلهٔ ۲ (راهنمای ساخت قالب المنتوری فقط با ویجت‌ها) شروع می‌شود.</p>
+  </footer>
+
+</main>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
